@@ -3,83 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto - Contabilidad I</title>
+    <title>Proyecto - Lógica de Sistemas</title>
+    <link rel="shortcut icon" href="Imagenes/Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/normalize.css">
     <link rel="stylesheet" href="./CSS/substyle.css">
 </head>
 <body>
 
-    <header>
-        <a href="index.html" class="back-btn"> ← Volver al portafolio → </a>
+    <header class="top-header">
+        <a href="index.html" class="back-btn-header"> ← Volver al portafolio → </a>
     </header>
 
     <section class="banner">
         <img src="./Imagenes/Banner 6.jpg" alt="Proyecto">
     </section>
 
-    <main class="container">
+    <main class="project-page">
 
-        <section class="info">
-            <h1>Logica de Sistemas</h1>
-            <p class="materia">Clase: Logica de Sistemas</p>
+        <h1 class="main-title">Lógica de Sistemas</h1>
 
-            <div class="stats">
-                <div class="stat-box">
-                    <h3>1</h3>
-                    <br>
-                    <p>Proyectos en esta clase</p>
+        <div class="content-grid">
+
+            <!-- Izquierda -->
+            <section class="media-section">
+
+                <section class="carousel-section">
+
+                    <h2 class="section-title">Galería del Proyecto</h2>
+
+                    <div class="carousel">
+                        <button class="prev">&#10094;</button>
+
+                        <div class="carousel-container">
+                            <img src="./Imagenes/Logica 1.jpg" class="slide active" alt="Proyecto 1">
+                            <img src="./Imagenes/Logica 2.png" class="slide" alt="Proyecto 2">
+                            <img src="./Imagenes/Logica 3.png" class="slide" alt="Proyecto 3">
+                        </div>
+
+                        <button class="next">&#10095;</button>
+                     </div>
+                </section>
+
+                <section class="video-section">
+                    <h2>Demostración del proyecto</h2>
+
+                    <iframe
+                        src="https://drive.google.com/file/d/12H_gMmjJxT_LfLDYsitKUBnMKYOfTb1U/preview"                        width="100%"
+                        height="500"
+                        allow="autoplay">
+                    </iframe>
+                </section>
+
+            </section>
+
+            <!-- Derecha -->
+            <aside class="info-section">
+
+                <p class="materia">Clase: Lógica de Sistemas</p>
+
+                <div class="stats">
+                    <div class="stat-box">
+                        <h3>1</h3>
+                        <p>Proyectos en esta clase</p>
+                    </div>
+
+                    <div class="stat-box">
+                        <h3>Bombas de un tanque de agua</h3>
+                        <p>Armar un circuito que active las bombas de un tanque de agua</p>
+                    </div>
                 </div>
 
-                <div class="stat-box">
-                    <h3>Creacion de un circuito</h3>
-                    <br>
-                    <p>Resolver el ejercicio 3 de la hoja de trabajo propuesta</p>
-                </div>
-            </div>
+                <h2>Descripción</h2>
 
-            <h2>Descripción</h2>
-            <p>Se llevará a cabo un proceso completo de análisis, diseño e implementación de un circuito digital combinacional para un tanque de agua en un residencial con dos bombas de salida. El objetivo principal será construir un sistema lógico capaz de activar o desactivar ambas bombas de agua.</p>
-            <br>
-            <p>Inicialmente, se identificarán las variables de entrada y salida del sistema. Como entradas se utilizarán los sensores de nivel de agua “A”, “B”, “C” y “D”. Las salidas serán las bombas M1 y M2. Posteriormente, se analizará cuidadosamente el funcionamiento solicitado para comprender en qué situaciones debe activarse cada bomba y cuándo deben apagarse.</p>
-            <br>
-            <p>Después del análisis, se procederá a construir la tabla de verdad del sistema. En esta tabla se representarán todas las combinaciones posibles de los sensores y el comportamiento correspondiente de las bombas. Esto permitirá visualizar de forma lógica cada caso planteado, por ejemplo: cuando el agua esté por debajo del sensor “C”, cuando el nivel esté entre “A” y “C”, o cuando el tanque esté lleno.</p>
-            <br>
-            <p>Una vez terminada la tabla de verdad, se obtendrán las funciones booleanas para las salidas M1 y M2. Estas funciones representarán matemáticamente el comportamiento lógico del circuito. Luego, se simplificarán utilizando Álgebra de Boole, con el objetivo de reducir la cantidad de compuertas necesarias y hacer el circuito más eficiente.</p>
-            <br>
-            <p>Con las funciones simplificadas, se diseñará el diagrama lógico del circuito utilizando compuertas AND, OR y NOT. En esta etapa se representará gráficamente cómo se conectarán los sensores y las compuertas para producir las señales de salida correctas hacia las bombas M1 y M2.</p>
-            <br>
-            <p>Posteriormente, se realizará la simulación del circuito en un software de diseño digital para verificar que el sistema funcione correctamente en todos los casos posibles. Después de comprobar el funcionamiento lógico, se implementará físicamente el circuito utilizando compuertas lógicas reales, cables de conexión, protoboard y componentes electrónicos necesarios.</p>
-            <br>
-            <p>Finalmente, se documentará todo el proceso en un informe formal con normas APA, incluyendo introducción, objetivos, marco teórico, planteamiento del problema, desarrollo metodológico, tabla de verdad, simplificación de funciones booleanas, diagramas lógicos, implementación física, resultados obtenidos y conclusiones del proyecto.</p>
-        </section>
+                <p>Se llevará a cabo un proceso completo de análisis, diseño e implementación de un circuito digital combinacional para un tanque de agua en un residencial con dos bombas de salida. El objetivo principal será construir un sistema lógico capaz de activar o desactivar ambas bombas de agua.</p>
 
-        <section class="video-section">
-            <h2>Demostración del proyecto</h2>
-            <iframe
-                src="https://drive.google.com/file/d/12H_gMmjJxT_LfLDYsitKUBnMKYOfTb1U/preview"
-                width="100%"
-                height="500"
-                allow="autoplay">
-            </iframe>
-        </section>
+                <p>Inicialmente, se identificarán las variables de entrada y salida del sistema. Como entradas se utilizarán los sensores de nivel de agua “A”, “B”, “C” y “D”. Las salidas serán las bombas M1 y M2. Posteriormente, se analizará cuidadosamente el funcionamiento solicitado para comprender en qué situaciones debe activarse cada bomba y cuándo deben apagarse.</p>
 
-        <section class="carousel-section">
-            <h2>Galería del Proyecto</h2>
-            <div class="carousel">
-            <button class="prev">&#10094;</button>
-            <div class="carousel-container">
-            <img src="./Imagenes/Logica 1.jpg" class="slide active" alt="Proyecto 1">
-            <img src="./Imagenes/Logica 2.png" class="slide active" alt="Proyecto 2">
-            <img src="./Imagenes/Logica 3.png" class="slide active" alt="Proyecto 3">
-            </div>
+                <p>Después del análisis, se procederá a construir la tabla de verdad del sistema. En esta tabla se representarán todas las combinaciones posibles de los sensores y el comportamiento correspondiente de las bombas. Esto permitirá visualizar de forma lógica cada caso planteado, por ejemplo: cuando el agua esté por debajo del sensor “C”, cuando el nivel esté entre “A” y “C”, o cuando el tanque esté lleno.</p>
 
-            <button class="next">&#10095;</button>
-            </div>
-        </section>
+                <p>Una vez terminada la tabla de verdad, se obtendrán las funciones booleanas para las salidas M1 y M2. Estas funciones representarán matemáticamente el comportamiento lógico del circuito. Luego, se simplificarán utilizando Álgebra de Boole, con el objetivo de reducir la cantidad de compuertas necesarias y hacer el circuito más eficiente.</p>
+
+                <p>Con las funciones simplificadas, se diseñará el diagrama lógico del circuito utilizando compuertas AND, OR y NOT. En esta etapa se representará gráficamente cómo se conectarán los sensores y las compuertas para producir las señales de salida correctas hacia las bombas M1 y M2.</p>
+                
+                <p>Posteriormente, se realizará la simulación del circuito en un software de diseño digital para verificar que el sistema funcione correctamente en todos los casos posibles. Después de comprobar el funcionamiento lógico, se implementará físicamente el circuito utilizando compuertas lógicas reales, cables de conexión, protoboard y componentes electrónicos necesarios.</p>
+                
+                <p>Finalmente, se documentará todo el proceso en un informe formal con normas APA, incluyendo introducción, objetivos, marco teórico, planteamiento del problema, desarrollo metodológico, tabla de verdad, simplificación de funciones booleanas, diagramas lógicos, implementación física, resultados obtenidos y conclusiones del proyecto.</p>
+
+            </aside>
+
+        </div>
+
     </main>
+
     <script src="./JavaScript/subscript.js"></script>
+
     <footer>
         <p>&copy; Axel Geovanny Rodas Velasquez - 5090-26-4584</p>
     </footer>
+
 </body>
 </html>

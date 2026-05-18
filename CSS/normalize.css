@@ -22,6 +22,21 @@ html {
 
 body {
   margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  margin-top: 50px;
 }
 
 /**

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctame</title>
+    <link rel="shortcut icon" href="Imagenes/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/contactame.css">
+</head>
+<body>
+
+    <section class="contact-section">
+
+        <div class="contact-card">
+            <a href="index.html" class="btn-inicio"> ← Volver al inicio</a>
+
+            <h1>Contáctame</h1>
+            <p>
+                Si deseas comunicarte conmigo para consultas, proyectos o colaboración,
+                puedes enviarme un mensaje mediante este formulario.
+            </p>
+
+            <form action="https://formspree.io/f/mwvzkbew" method="POST">
+
+                <input type="text" name="Nombre" placeholder="Tu nombre" required>
+
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+
+                <textarea name="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                <input type="hidden" name="_next" value="index.html">
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+
+    </section>
+
+</body>
+</html>
